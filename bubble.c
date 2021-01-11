@@ -29,5 +29,6 @@ void main()
 	printf("after sorting:\n");
 	for(i=0;i<n;i++)
 		printf("%d\t",arr[i]);
+		//second push test
 	
 }
