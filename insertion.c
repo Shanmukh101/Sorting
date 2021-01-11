@@ -25,7 +25,7 @@ void main()
       printf("enter elements:\n");
       for(i=0;i<n;i++)
        scanf("%d",&arr[i]);
-     is(arr,n);
+     is(arr,n);//third push
       printf("after sorting:\n");
            for(i=0;i<n;i++)
                 printf("%d\t",arr[i]);
