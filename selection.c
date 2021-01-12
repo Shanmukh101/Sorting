@@ -1,31 +1,15 @@
-#include<stdio.h>
-int main(){
-   
-   int i, j, count, temp, number[25];
-
-   printf("How many numbers u are going to enter?: ");
-   scanf("%d",&count);
-
-   printf("Enter %d elements: ", count);
- 
-   for(i=0;i<count;i++)
-      scanf("%d",&number[i]);
- 
-   
-   for(i=0;i<count;i++){
-      for(j=i+1;j<count;j++){
-         if(number[i]>number[j]){
-            temp=number[i];
-            number[i]=number[j];
-            number[j]=temp;
-         }
-      }
-   }
-
-   printf("Sorted elements: ");
-   for(i=0;i<count;i++)
-      printf(" %d",number[i]);
- //secondary commit
-
-   return 0;
+void selection(int arr[],int n)
+{
+	int i,j,temp,p;
+	for(i=0;i<n;i++)
+	{
+		p=i;
+	for(j=i+1;j<n;j++)
+	{	if(arr[j]<arr[p])
+			p=j;
+	}
+		temp=arr[p];
+		arr[p]=arr[i];
+		arr[i]=temp;
+	}
 }
